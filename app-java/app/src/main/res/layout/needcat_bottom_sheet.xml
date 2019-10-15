@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:padding="8dp"
+  android:id="@+id/needCatBottom_sheet"
+  android:background="@color/colorBackGroundBottemSheet"
+  app:behavior_hideable="true"
+  app:behavior_peekHeight="0dp"
+  app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+  <TextView
+    android:id="@+id/txtAllNeedCatBottom_sheet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dip"
+    android:gravity="center"
+    android:textColor="@color/colorTextBottemSheet"
+    android:text="همه آگهی ها"
+    android:textSize="18sp"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerNeedCat2BottomSheet"
+      android:layout_width="0dip"
+      android:layout_height="match_parent"
+      android:layout_margin="5dip"
+      android:layout_weight="0.5"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/recyclerNeedCat1BottomSheet"
+      android:layout_width="0dip"
+      android:layout_height="match_parent"
+      android:layout_margin="5dip"
+      android:layout_weight="0.5"/>
+  </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <declare-styleable name="CircularImageView">
+    <attr name="civ_border" format="boolean"/>
+    <attr name="civ_border_width" format="dimension"/>
+    <attr name="civ_border_color" format="color"/>
+    <attr name="civ_shadow" format="boolean"/>
+    <attr name="civ_shadow_color" format="color"/>
+    <attr name="civ_shadow_radius" format="float"/>
+  </declare-styleable>
+  <declare-styleable name="RoundedImageView">
+    <attr name="sriv_left_top_corner_radius" format="dimension" />
+    <attr name="sriv_right_top_corner_radius" format="dimension" />
+    <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+    <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+    <attr name="sriv_border_width" format="dimension" />
+    <attr name="sriv_border_color" format="color" />
+    <attr name="sriv_oval" format="boolean" />
+    <attr name="android:scaleType" />
+  </declare-styleable>
+  <declare-styleable name="MyTabLayout">
+    <attr name="number_of_tabs">
+      <enum name="three" value="3" />
+      <enum name="four" value="4" />
+      <enum name="five" value="5" />
+      <enum name="three_IconOnly" value="0" />
+    </attr>
+
+    <attr name="starting_position">
+      <enum name="one" value="0"/>
+      <enum name="two" value="1"/>
+      <enum name="three" value="2"/>
+      <enum name="four" value="3"/>
+      <enum name="five" value="4"/>
+    </attr>
+
+    <attr name="tab_color" format="color" />
+    <attr name="button_color" format="color" />
+    <attr name="text_color" format="color" />
+
+    <attr name="icon_one" format="reference" />
+    <attr name="icon_two" format="reference" />
+    <attr name="icon_three" format="reference" />
+    <attr name="icon_four" format="reference" />
+    <attr name="icon_five" format="reference" />
+
+    <attr name="text_one" format="string" />
+    <attr name="text_two" format="string" />
+    <attr name="text_three" format="string" />
+  </declare-styleable>
+  <declare-styleable name="Rotate3dAnimation">
+   <attr name="rollType" format="enum">
+     <enum name="x" value="0"/>
+     <enum name="y" value="1"/>
+     <enum name="z" value="2"/>
+   </attr>
+    <attr name="fromDeg" format="float"/>
+    <attr name="toDeg" format="float"/>
+    <attr name="pivotX" format="fraction"/>
+    <attr name="pivotY" format="fraction"/>
+  </declare-styleable>
+  <declare-styleable name="ProgressWheel">
+    <attr name="matProg_progressIndeterminate" format="boolean"/>
+    <attr name="matProg_barColor" format="color"/>
+    <attr name="matProg_rimColor" format="color"/>
+    <attr name="matProg_rimWidth" format="dimension"/>
+    <attr name="matProg_spinSpeed" format="float"/>
+    <attr name="matProg_barSpinCycleTime" format="integer"/>
+    <attr name="matProg_circleRadius" format="dimension"/>
+    <attr name="matProg_fillRadius" format="boolean"/>
+    <attr name="matProg_barWidth" format="dimension"/>
+    <attr name="matProg_linearProgress" format="boolean"/>
+  </declare-styleable>
+
+  <attr format="string" name="fontPath"/>
+
+<declare-styleable name="FabMenu">
+  <attr name="sfm_src_icon" format="reference"/>
+  <attr name="sfm_size_menu_button" format="enum">
+    <enum name="normal" value="0"/>
+    <enum name="mini" value="1"/>
+  </attr>
+  <attr name="sfm_collapse_on_item_selected" format="boolean"/>
+  <attr name="sfm_expand_duration" format="integer"/>
+  <attr name="sfm_collapse_duration" format="integer"/>
+  <attr name="sfm_expand_item_rotation_degrees" format="integer"/>
+  <attr name="sfm_expand_menu_button_rotation_degrees" format="integer"/>
+  <attr name="sfm_spacing_menu_items" format="dimension"/>
+  <attr name="sfm_delay_expanding_menu_items" format="integer"/>
+  <attr name="sfm_menu_button_color" format="color"/>
+  <attr name="sfm_menu_button_ripple_color" format="color"/>
+</declare-styleable>
+
+</resources>

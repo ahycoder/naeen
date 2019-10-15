@@ -1,0 +1,155 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorBackGround"
+  >
+
+  <LinearLayout
+    android:id="@+id/linearLayout2"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/colorToolbar"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toTopOf="@+id/lh25"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/txtUserName"
+    android:layout_width="wrap_content"
+    android:layout_height="24dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:gravity="right|center_vertical"
+    android:text="نام کاربری"
+    android:textColor="@color/ef_white"
+    android:textSize="18sp"
+    android:visibility="visible"
+    app:layout_constraintBottom_toTopOf="@+id/lh20"
+    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+    app:layout_constraintStart_toEndOf="@+id/circleImgHomeUser"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/lh20"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.20109439"/>
+
+  <custom.CircularImageView
+    android:id="@+id/circleImgHomeUser"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginTop="8dp"
+    android:src="@drawable/ic_user_login"
+    app:layout_constraintBottom_toTopOf="@+id/lh20"
+    app:layout_constraintDimensionRatio="w,1:1"
+    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+    app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+    app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+    tools:ignore="NotSibling"/>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/lh25"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.25581396"/>
+
+  <androidx.constraintlayout.widget.Guideline
+    android:id="@+id/lh30"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.3"/>
+
+  <LinearLayout
+    android:id="@+id/layMenuHome"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="left|center_vertical"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/home_menu_background"
+    android:gravity="right"
+    android:orientation="horizontal"
+    android:visibility="visible"
+    app:layout_constraintBottom_toTopOf="@+id/lh30"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/lh20"
+    >
+
+    <ImageButton
+      android:id="@+id/imgHomeAnswerabe"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/home_menu_background"
+      android:padding="10dip"
+      android:src="@drawable/tab_answerable"
+      android:text="جواب مسولین"
+      android:tint="@color/colorToolbar"/>
+
+    <ImageButton
+      android:id="@+id/imgHomeNeedsMarked"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/home_menu_background"
+      android:padding="10dip"
+      android:src="@drawable/tab_needs"
+      android:text="آگهی های نشان شده"
+      android:tint="@color/colorToolbar"/>
+
+    <ImageButton
+      android:id="@+id/imgHomeNewsMarked"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/home_menu_background"
+      android:padding="10dip"
+      android:src="@drawable/tab_news"
+      android:text="خبر های نشان شده"
+      android:tint="@color/colorToolbar"/>
+
+    <ImageButton
+      android:id="@+id/imgHomeMyNeeds"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/home_menu_background"
+      android:padding="10dip"
+      android:src="@drawable/tab_home"
+      android:text="آگهی های من"
+      android:tint="@color/colorToolbar"/>
+  </LinearLayout>
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerHome"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="@+id/lh30"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="needs.ActivityAddNeeds"
+  android:orientation="vertical">
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/textView12"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:gravity="center"
+      android:text="ثبت آگهی جدید"
+      android:textColor="@color/colorAccent"
+      android:textSize="18sp"/>
+  </LinearLayout>
+
+  <androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+      android:id="@+id/viewA"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"
+      android:orientation="vertical">
+
+      <LinearLayout
+        android:id="@+id/layAddNeedsCategory"
+        style="@style/LinearLayoutAddNeeds">
+
+        <TextView
+          android:id="@+id/txtAddNeedsCategory"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:gravity="right"
+          android:text="همه دسته بندی ها"/>
+
+        <TextView
+          android:id="@+id/textView11"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:text="دسته بندی :"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeddsArea"
+        style="@style/LinearLayoutAddNeeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+          android:id="@+id/textViewArea"
+          style="@style/TextViewAddNeeds"
+          android:layout_width="wrap_content"
+          android:text="متراژ"/>
+
+        <EditText
+          android:id="@+id/edtAddNeddsArea"
+          android:layout_width="126dip"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dip"
+          android:ems="10"
+          android:gravity="right"
+          android:inputType="numberSigned"
+          />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeddsRent"
+        style="@style/LinearLayoutAddNeeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+          android:id="@+id/textViewRent"
+          style="@style/TextViewAddNeeds"
+          android:layout_width="wrap_content"
+          android:text="اجاره"/>
+
+        <EditText
+          android:id="@+id/edtAddNeddsRent"
+          android:layout_width="126dip"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dip"
+          android:ems="10"
+          android:gravity="right"
+          android:inputType="numberSigned"
+          />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeddsMileage"
+        style="@style/LinearLayoutAddNeeds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+
+        <TextView
+          android:id="@+id/textViewMileage"
+          style="@style/TextViewAddNeeds"
+          android:layout_width="wrap_content"
+          android:text="رهن"/>
+
+        <EditText
+          android:id="@+id/edtAddNeddsMileage"
+          android:layout_width="126dip"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dip"
+          android:ems="10"
+          android:gravity="right"
+          android:inputType="numberSigned"
+          />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeedsYear"
+        style="@style/LinearLayoutAddNeeds"
+        android:visibility="gone">
+
+        <TextView
+          android:id="@+id/txtAddNeedsityYear"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:gravity="right"
+          android:text="انتخاب"
+          />
+
+        <TextView
+          android:id="@+id/textViewyear"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:text="سال ساخت :"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeddsPrice"
+        style="@style/LinearLayoutAddNeeds"
+        android:visibility="gone">
+
+        <TextView
+          android:id="@+id/textView100"
+          style="@style/TextViewAddNeeds"
+          android:layout_width="wrap_content"
+          android:text="قیمت"/>
+
+        <EditText
+          android:id="@+id/edtAddNeddsPrice"
+          android:layout_width="126dip"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dip"
+          android:ems="10"
+          android:gravity="right"
+          android:inputType="numberSigned"
+          />
+      </LinearLayout>
+
+      <LinearLayout
+        style="@style/LinearLayoutAddNeeds">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+          <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="0.33">
+
+            <ImageView
+              android:id="@+id/imgAddNeeds3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="5dip"
+              android:layout_marginEnd="5dip"
+              android:src="@drawable/add_image_needs"
+              android:tag="3"
+              android:visibility="invisible"
+              />
+
+            <ImageView
+              android:id="@+id/imgAddNeesRemove3"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentRight="true"
+              android:src="@drawable/ic_remove_image_needs_add"
+              android:tag="3"/>
+
+          </RelativeLayout>
+
+          <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="5dip"
+            android:layout_weight="0.33">
+
+            <ImageView
+              android:id="@+id/imgAddNeeds2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="5dip"
+              android:layout_marginEnd="5dip"
+              android:src="@drawable/add_image_needs"
+              android:tag="2"
+              android:visibility="invisible"/>
+
+            <ImageView
+              android:id="@+id/imgAddNeesRemove2"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentRight="true"
+              android:src="@drawable/ic_remove_image_needs_add"
+              android:tag="2"/>
+          </RelativeLayout>
+
+          <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="64dip"
+            android:layout_margin="5dip"
+            android:layout_weight="0.33">
+
+            <ImageView
+              android:id="@+id/imgAddNeeds1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginStart="5dip"
+              android:layout_marginEnd="5dip"
+              android:src="@drawable/add_image_needs"
+              android:tag="1"
+              android:visibility="visible"/>
+
+            <ImageView
+              android:id="@+id/imgAddNeesRemove1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentRight="true"
+              android:src="@drawable/ic_remove_image_needs_add"
+              android:tag="1"/>
+          </RelativeLayout>
+
+        </LinearLayout>
+
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeddsTitle"
+        style="@style/LinearLayoutAddNeeds">
+
+        <TextView
+          android:id="@+id/textView10"
+          style="@style/TextViewAddNeeds"
+          android:layout_width="wrap_content"
+          android:text="عنوان آگهی"/>
+
+        <EditText
+          android:id="@+id/edtAddNeddsTitle"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dip"
+          android:ems="10"
+          android:gravity="right"
+          android:inputType="textPersonName"
+          />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeddsDesc"
+        style="@style/LinearLayoutAddNeeds">
+
+        <TextView
+          android:id="@+id/textView10d"
+          style="@style/TextViewAddNeeds"
+          android:layout_width="wrap_content"
+          android:text="توضیحات آگهی"/>
+
+        <EditText
+          android:id="@+id/edtAddNeddsDesc"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginRight="5dip"
+          android:ems="10"
+          android:gravity="right"
+          android:inputType="textMultiLine"
+          />
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeddsCity"
+        style="@style/LinearLayoutAddNeeds">
+
+        <TextView
+          android:id="@+id/txtAddNeedsityCity"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:gravity="right"
+          android:text="انتخاب"
+          />
+
+        <TextView
+          android:id="@+id/textView1g1"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:text="شهر :"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeedsKind"
+        style="@style/LinearLayoutAddNeeds"
+        android:visibility="gone">
+
+        <TextView
+          android:id="@+id/txtAddNeedsityKind"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:gravity="right"
+          android:text="انتخاب"
+          />
+
+        <TextView
+          android:id="@+id/textView1g1sd"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:text="نوع آگهی :"/>
+      </LinearLayout>
+
+      <LinearLayout
+        android:id="@+id/layAddNeedsRoom"
+        style="@style/LinearLayoutAddNeeds"
+        android:visibility="gone">
+
+        <TextView
+          android:id="@+id/txtAddNeedsityRoom"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:gravity="right"
+          android:text="انتخاب"
+          />
+
+        <TextView
+          android:id="@+id/textViewRoom"
+          android:layout_width="0dip"
+          android:layout_height="wrap_content"
+          android:layout_weight="0.5"
+          android:text="تعداد اتاق :"/>
+      </LinearLayout>
+
+
+
+    </LinearLayout>
+  </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
+
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fabNeedsAdd"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/ic_add_needs"
+    app:backgroundTint="@color/colorPrimary"
+    app:layout_anchor="@id/viewA" />
+  <include layout="@layout/custom_bottom_sheet" />
+  <include layout="@layout/needcat_bottom_sheet" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

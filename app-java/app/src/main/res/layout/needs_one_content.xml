@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/textView21"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="توضیحات : "/>
+
+    <custom.justify.JustifiedTextView
+      android:id="@+id/jTxtOneNeedsDesc"
+      android:layout_width="match_parent"
+      android:layout_height="50dip"
+      />
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/layOneNeedsCity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsCity"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_weight="1"/>
+
+    <TextView
+      android:id="@+id/textView26"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text=" شهر : "/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/layOneNeedsYear"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsYear"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"/>
+
+    <TextView
+      android:id="@+id/textView6"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="سال ساخت : "/>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:id="@+id/layOneNeedsPrice"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsPrice"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"/>
+
+    <TextView
+      android:id="@+id/textView2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="قیمت : "/>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:id="@+id/layOneNeedsArea"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsArea"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"/>
+
+    <TextView
+      android:id="@+id/textViewd2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="متراژ : "/>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:id="@+id/layOneNeedsRent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsRent"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"/>
+
+    <TextView
+      android:id="@+id/textViewdd2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="اجاره : "/>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:id="@+id/layOneNeedsMileage"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsMileage"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"/>
+
+    <TextView
+      android:id="@+id/textViewddd2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="رهن :"/>
+
+  </LinearLayout>
+
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsKind"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"/>
+
+    <TextView
+      android:id="@+id/textViewdadd2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="نوع آگهی :"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:id="@+id/layOneNeedsRoom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsRoom"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"/>
+
+    <TextView
+      android:id="@+id/textViaewdadd2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="تعداد اتاق :"/>
+
+  </LinearLayout>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="right"
+    android:orientation="horizontal">
+
+    <TextView
+      android:id="@+id/txtOneNeedsDate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"/>
+
+    <TextView
+      android:id="@+id/textViaewdaadd2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:gravity="right"
+      android:text="تاریخ :"/>
+
+  </LinearLayout>
+
+
+
+</LinearLayout>

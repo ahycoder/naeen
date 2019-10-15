@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <color name="colorBackGround">#413D5A80</color>
+    <color name="colorSemiBackGround">#233D5A80</color>
+    <color name="colorPrimaryDark">#98C1D9</color>
+    <color name="colorAccent">#98C1D9</color>
+    <color name="colorToolbar">#3D5A80</color>
+    <color name="colorToobarText">#E0FBFC</color>
+    <color name="colorTabIcon">#E0FBFC</color>
+    <color name="colorTabBackGroundIcon">#98C1D9</color>
+    <color name="colorTabBackGround">#3D5A80</color>
+    <color name="colorBackGroundBottemSheet">#3D5A80</color>
+    <color name="colorTextBottemSheet">#E0FBFC</color>
+    <color name="colorTextItemRecycler">#4F6367</color>
+    <color name="colorFastNeeds">#F8BB86</color>
+    <color name="colorWeatherBackGround">#2A4261</color>
+    <color name="colorBackGroundFAB">#3D5A80</color>
+    <color name="colorTextView">#4F6367</color>
+    <color name="colorTintIconMenuHome">#2A4261</color>
+    <color name="colorBackgroundMenuHome">#98C1D9</color>
+    <color name="colorBackgroundSelectedMenuHome">#F8BB86</color>
+
+
+    <color name="colorPrimary">#96BFD2</color>
+    <color name="semiColorPrimary">#772EB3E5</color>
+    <color name="whit">#FFFFFF</color>
+    <color name="grren">#FF009688</color>
+    <color name="colorLess">#00FFFFFF</color>
+
+    <color name="colorMain1">#7E009688</color>
+    <color name="colorMain2">#575A89</color>
+    <color name="colorMain3">#2F2E41</color>
+    <color name="colorBackGround2">#3278B6AA</color>
+    <color name="colorMain4">#009688</color>
+
+
+    <!--sweetAlertDialog-->
+    <color name="float_transparent">#00000000</color>
+    <color name="sd_bg_color">#FFFFFF</color>
+    <color name="sd_button_text_color">#FFFFFF</color>
+    <color name="sd_gray_btn_bg_color">#DD6B55</color>
+    <color name="sd_gray_btn_bg_pressed_color">#CD5B55</color>
+    <color name="sd_blue_btn_bg_color">#3D5A80</color>
+    <color name="sd_blue_btn_bg_pressed_color">#2A4261</color>
+    <color name="sd_red_btn_bg_color">#3D5A80</color>
+    <color name="sd_red_btn_bg_pressed_color">#2A4261</color>
+    <color name="sd_error_stroke_color">#F27474</color>
+    <color name="sd_success_stroke_color">#A5DC86</color>
+    <color name="sd_trans_success_stroke_color">#33A5DC86</color>
+    <color name="sd_warning_stroke_color">#F8BB86</color>
+    <color name="sd_text_color">#333333</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+
+
+
+</resources>

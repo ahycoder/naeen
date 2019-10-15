@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/tools"
+  android:id="@+id/loading"
+  android:layout_width="@dimen/alert_width"
+  android:layout_height="wrap_content"
+  android:layout_gravity="center"
+  android:background="@drawable/sweet_alert_dialog_dialog_background"
+  android:gravity="center"
+  android:orientation="vertical"
+  android:padding="@dimen/alert_padding"
+  app:ignore="NamespaceTypo">
+
+
+  <custom.CircularImageView
+    android:id="@+id/circleImgCustomDialog"
+    android:layout_width="96dip"
+    android:layout_height="96dip"
+    android:layout_margin="10dip"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="8dp"
+    android:src="@drawable/ic_user_login"
+    android:visibility="gone"/>
+
+  <TextView
+    android:id="@+id/txtTitleDialogSendComment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_spaces"
+    android:layout_marginBottom="@dimen/common_spaces"
+    android:gravity="center"
+    android:singleLine="true"
+    android:inputType="textMultiLine"
+    android:text="@string/dialog_default_title"
+    android:textColor="@color/colorTextItemRecycler"
+    android:textSize="18sp"
+    android:textStyle="bold"/>
+
+  <androidx.appcompat.widget.AppCompatEditText
+    android:id="@+id/edtDialogSendComment"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/common_spaces"
+    android:layout_marginBottom="@dimen/common_spaces"
+    android:gravity="right"
+    android:textColor="@color/colorTextItemRecycler"
+    android:textColorHint="@color/colorTextItemRecycler"
+    app:backgroundTint="@color/colorTextItemRecycler"
+    app:ignore="RtlHardcoded"/>
+
+  <androidx.appcompat.widget.AppCompatCheckBox
+    android:id="@+id/chkPrivateDialpgSendComment"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="right"
+    android:layout_marginLeft="2dip"
+    android:layout_marginTop="@dimen/common_spaces"
+    android:layout_marginRight="2dip"
+    android:layout_marginBottom="@dimen/common_spaces"
+    android:layout_weight="0.25"
+    android:text="ارسال به صورت خصوصی"
+    android:textColor="@color/colorTextItemRecycler"
+    android:textStyle="bold"
+    app:buttonTint="@color/colorTextItemRecycler"/>
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/common_spaces"
+    android:layout_marginBottom="@dimen/common_spaces"
+    android:gravity="center">
+
+    <Button
+      android:id="@+id/cancelDialogSendComment"
+      style="@style/dialog_btn.cancel"
+      android:layout_marginRight="@dimen/common_spaces_double"
+      android:text="لغو"
+      android:visibility="visible"/>
+
+    <Button
+      android:id="@+id/confirmDialogSendComment"
+      style="@style/dialog_btn.confirm"
+      android:text="ارسال"/>
+  </LinearLayout>
+
+</LinearLayout>

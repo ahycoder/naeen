@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:background="@color/colorBackGround"
+  tools:context=".MainActivity">
+
+  <com.google.android.material.appbar.AppBarLayout
+    android:id="@+id/appbarNeeds"
+    android:layout_width="match_parent"
+    android:layout_height="256dip"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.CollapsingToolbarLayout
+      android:id="@+id/collapsing_toolbar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:fitsSystemWindows="true"
+      app:contentScrim="@color/colorToolbar"
+      app:layout_scrollFlags="scroll|exitUntilCollapsed"
+      >
+
+      <ImageView
+        android:id="@+id/imgBannerNeeds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_default_banner"
+        app:layout_collapseMode="parallax"
+        app:layout_collapseParallaxMultiplier="0.7"/>
+
+
+      <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin">
+
+        <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:gravity="center|right"
+          android:orientation="horizontal">
+
+          <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/chkNeedFast"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="فوری"
+            android:textColor="@color/colorToobarText"
+            android:textStyle="bold"
+            app:buttonTint="@color/colorToobarText"/>
+
+          <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/chkNeedImage"
+            style="@style/CheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="عکس دار"
+            android:textColor="@color/colorToobarText"
+            android:textStyle="bold"
+            app:buttonTint="@color/colorToobarText"
+            />
+
+          <TextView
+            android:id="@+id/txtNeedCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="همه شهرها"
+            android:textColor="@color/colorToobarText"
+            android:textStyle="bold"/>
+
+          <TextView
+            android:id="@+id/txtNeedCat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dip"
+            android:layout_marginRight="2dip"
+            android:layout_weight="0.25"
+            android:gravity="center"
+            android:text="همه آگهی ها"
+            android:textColor="@color/colorToobarText"
+            android:textStyle="bold"/>
+
+        </LinearLayout>
+      </androidx.appcompat.widget.Toolbar>
+
+
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+  </com.google.android.material.appbar.AppBarLayout>
+
+
+  <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recyclerNeeds"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dip"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+  </androidx.recyclerview.widget.RecyclerView>
+
+  <include layout="@layout/needcat_bottom_sheet"
+    />
+
+  <include layout="@layout/custom_bottom_sheet"
+    />
+
+  <com.google.android.material.floatingactionbutton.FloatingActionButton
+    android:id="@+id/fabAddNeeds"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:backgroundTint="@color/colorAccent"
+    app:layout_anchor="@id/appbarNeeds"
+    app:layout_anchorGravity="bottom|left"
+    app:srcCompat="@drawable/ic_add_needs"
+    tools:ignore="VectorDrawableCompat"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
